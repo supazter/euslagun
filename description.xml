@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<description
+ xmlns="http://openoffice.org/extensions/description/2006"
+ xmlns:dep="http://openoffice.org/extensions/description/2006"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<identifier value="Cim.from.cim"/>
+
+	<version value="3"/>
+
+	<dependencies>
+		<OpenOffice.org-minimal-version value="2.4" dep:name="OpenOffice.org 2.4"/>
+	</dependencies>
+
+	<platform value="all" />
+
+	<display-name>
+		<name lang="eu">Cim</name>
+		<name lang="es">Cim</name>
+	</display-name>
+      <icon>
+		<default xlink:href="image/icon.bmp" />
+	</icon>
+
+
+	<extension-description>
+		<src xlink:href="Deskribapena/Describapena.eu" lang="eu" />
+		<src xlink:href="Deskribapena/Deskribapena.es" lang="es" />
+	</extension-description>
+
+	<registration>
+	</registration>
+</description>

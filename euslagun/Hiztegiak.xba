@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE script:module PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "module.dtd">
+<script:module xmlns:script="http://openoffice.org/2000/script" script:name="Hiztegiak" script:language="StarBasic">REM  *****  BASIC  *****
+
+Sub Zehazki()
+
+Dim hautapena,hizkuntza,oShell As Object
+Dim hautatu As String
+Dim testua, X, hizkia, hautatuf As Long
+
+GlobalScope.BasicLibraries.LoadLibrary(&quot;Tools&quot;)
+hizkuntza = GetStarOfficeLocale().language
+
+hautapena = ThisComponent.CurrentSelection.getByIndex(0)
+hautatu = hautapena.String
+
+
+If hizkuntza = &quot;eu&quot; Then
+
+	If hautatu = &quot;&quot; Then
+		hautatu = InputBox( &quot;Hitz bat idatzi&quot; ,&quot; Zehazki: Gaztelera-Euskara hiztegia &quot;)
+	End If
+
+	if hautatu = &quot;&quot; Then
+ 	Else
+
+		testua = Len(hautatu) &apos; testuaren luzeera, zenbat karaktereez osatuta dagoen
+
+    	For X = 1 To testua &apos; hizkiak banan bana begiratu
+        hizkia = Asc(Mid(hautatu, X, 1)) &apos;  ascii taulan daukan balioa hartu
+
+        	Select Case hizkia
+
+            	Case Is = 225 &apos; á
+              		hautatu = hautatu &amp; Chr(97)
+              	Case Is = 233 &apos; é
+               		hautatu = hautatu &amp; Chr(101)
+            	Case Is = 237 &apos; í
+                	hautatu = hautatu &amp; Chr(105)
+            	Case Is = 243 &apos; ó
+                	hautatu = hautatu &amp; Chr(111)
+            	Case Is = 250 &apos; ú
+                	hautatuf = hautatu &amp; Chr(117)
+            	Case Else &apos; tildea ez daukatenak
+              		hautatu = hautatu &amp; Mid(hautatu, X, 1)
+
+        	End Select
+
+    	Next X
+
+      	hautatu = (Mid (hautatu, (testua +1))) &apos;jatorrizko hitza mantentzen duenez hau kentzen diogu emaitza tilderik gabe azaltzeko
+        oShell = CreateUnoService(&quot;com.sun.star.system.SystemShellExecute&quot;)
+    	oShell.Execute (&quot;http://ehu.es/ehg/cgi/zehazki/bila?m=has&amp;z=&quot; &amp; hautatu,&quot;&quot;,0) &apos; hitza bilatu
+
+	End if
+
+Else
+
+	If hautatu = &quot;&quot; Then
+       hautatu = InputBox( &quot;Escriba una palabra&quot; ,&quot; Zehazki: Diccionario Castellano-Euskara &quot;)
+	End If
+
+	if hautatu = &quot;&quot; Then
+
+   	Else
+
+   	 	testua = Len(hautatu) &apos; testuaren luzeera, zenbat karaktereez osatuta dagoen
+
+    	For X = 1 To testua &apos; hizkiak banan bana begiratu
+        hizkia = Asc(Mid(hautatu, X, 1)) &apos;  ascii taulan daukan balioa hartu
+
+        	Select Case hizkia
+
+            	Case Is = 225 &apos; á
+              		hautatu = hautatu &amp; Chr(97)
+              	Case Is = 233 &apos; é
+               		hautatu = hautatu &amp; Chr(101)
+            	Case Is = 237 &apos; í
+                	hautatu = hautatu &amp; Chr(105)
+            	Case Is = 243 &apos; ó
+                	hautatu = hautatu &amp; Chr(111)
+            	Case Is = 250 &apos; ú
+                	hautatuf = hautatu &amp; Chr(117)
+            	Case Else &apos; tildea ez daukatenak
+              		hautatu = hautatu &amp; Mid(hautatu, X, 1)
+
+        	End Select
+
+    	Next X
+
+      	hautatu = (Mid (hautatu, (testua +1))) &apos;jatorrizko hitza mantentzen duenez hau kentzen diogu emaitza tilderik gabe azaltzeko
+        oShell = CreateUnoService(&quot;com.sun.star.system.SystemShellExecute&quot;)
+    	oShell.Execute (&quot;http://ehu.es/ehg/cgi/zehazki/bila?m=has&amp;z=&quot; &amp; hautatu,&quot;&quot;,0) &apos; hitza bilatu
+
+	End if
+
+End if
+End sub
+
+Sub Elhuyar()
+
+Dim hautapena, hizkuntza, oShell As Object
+Dim hautatu As String
+Dim testua, X, hizkia As Long
+
+GlobalScope.BasicLibraries.LoadLibrary(&quot;Tools&quot;)&apos; hizkuntza jakiteko beharrezko liburutegia
+hizkuntza = GetStarOfficeLocale().language &apos; hizkuntza
+hautapena = ThisComponent.CurrentSelection.getByIndex(0) &apos;hautapena irakurri
+hautatu = hautapena.String
+
+
+If hizkuntza = &quot;eu&quot; Then
+
+	If hautatu = &quot;&quot; Then
+		hautatu = InputBox( &quot;Hitz bat idatzi&quot; ,&quot; Elhuyar: Euskara-Gaztelera hiztegia &quot;)
+	End If
+
+	if hautatu = &quot;&quot; Then
+ 	Else
+
+		testua = Len(hautatu) &apos; testuaren luzeera, zenbat karaktereez osatuta dagoen
+
+    	For X = 1 To testua &apos; hizkiak banan bana begiratu
+        hizkia = Asc(Mid(hautatu, X, 1)) &apos;  ascii taulan daukan balioa hartu
+
+        	Select Case hizkia
+
+            	Case Is = 225 &apos; á
+              		hautatu = hautatu &amp; Chr(97)
+              	Case Is = 233 &apos; é
+               		hautatu = hautatu &amp; Chr(101)
+            	Case Is = 237 &apos; í
+                	hautatu = hautatu &amp; Chr(105)
+            	Case Is = 243 &apos; ó
+                	hautatu = hautatu &amp; Chr(111)
+            	Case Is = 250 &apos; ú
+                	hautatuf = hautatu &amp; Chr(117)
+            	Case Else &apos; tildea ez daukatenak
+              		hautatu = hautatu &amp; Mid(hautatu, X, 1)
+
+        	End Select
+
+    	Next X
+
+      	hautatu = (Mid (hautatu, (testua +1))) &apos;jatorrizko hitza mantentzen duenez hau kentzen diogu emaitza tilderik gabe azaltzeko
+        oShell = CreateUnoService(&quot;com.sun.star.system.SystemShellExecute&quot;)
+    	oShell.Execute (&quot;http://hiztegiak.elhuyar.org/eu_es/&quot; &amp; hautatu,&quot;&quot;,0) &apos; hitza bilatu
+
+	End if
+
+Else
+
+	If hautatu = &quot;&quot; Then
+       hautatu = InputBox( &quot;Escriba una palabra&quot; ,&quot; Elhuyar: Diccionario Euskara-Castellano &quot;)
+	End If
+
+	if hautatu = &quot;&quot; Then
+
+   	Else
+
+   	 	testua = Len(hautatu) &apos; testuaren luzeera, zenbat karaktereez osatuta dagoen
+
+    	For X = 1 To testua &apos; hizkiak banan bana begiratu
+        hizkia = Asc(Mid(hautatu, X, 1)) &apos;  ascii taulan daukan balioa hartu
+
+        	Select Case hizkia
+
+            	Case Is = 225 &apos; á
+              		hautatu = hautatu &amp; Chr(97)
+              	Case Is = 233 &apos; é
+               		hautatu = hautatu &amp; Chr(101)
+            	Case Is = 237 &apos; í
+                	hautatu = hautatu &amp; Chr(105)
+            	Case Is = 243 &apos; ó
+                	hautatu = hautatu &amp; Chr(111)
+            	Case Is = 250 &apos; ú
+                	hautatuf = hautatu &amp; Chr(117)
+            	Case Else &apos; tildea ez daukatenak
+              		hautatu = hautatu &amp; Mid(hautatu, X, 1)
+
+        	End Select
+
+    	Next X
+
+      	hautatu = (Mid (hautatu, (testua +1))) &apos;jatorrizko hitza mantentzen duenez hau kentzen diogu emaitza tilderik gabe azaltzeko
+        oShell = CreateUnoService(&quot;com.sun.star.system.SystemShellExecute&quot;)
+    	oShell.Execute (&quot;http://hiztegiak.elhuyar.org/eu_es/&quot; &amp; hautatu,&quot;&quot;,0) &apos; hitza bilatu
+
+	End if
+
+End if
+End sub
+
+
+Sub Batua()
+
+Dim hautapena,hizkuntza,oShell As Object
+Dim hautatu As String
+Dim testua, X, hizkia As Long
+
+GlobalScope.BasicLibraries.LoadLibrary(&quot;Tools&quot;)
+hizkuntza = GetStarOfficeLocale().language
+
+hautapena = ThisComponent.CurrentSelection.getByIndex(0)
+hautatu = hautapena.String
+
+
+If hizkuntza = &quot;eu&quot; Then
+
+	If hautatu = &quot;&quot; Then
+		hautatu = InputBox( &quot;Hitz bat idatzi&quot; ,&quot; Euskaltzaindia: Hiztegi batua &quot;)
+	End If
+
+	if hautatu = &quot;&quot; Then
+ 	Else
+
+		testua = Len(hautatu) &apos; testuaren luzeera, zenbat karaktereez osatuta dagoen
+
+    	For X = 1 To testua &apos; hizkiak banan bana begiratu
+        hizkia = Asc(Mid(hautatu, X, 1)) &apos;  ascii taulan daukan balioa hartu
+
+        	Select Case hizkia
+
+            	Case Is = 225 &apos; á
+              		hautatu = hautatu &amp; Chr(97)
+              	Case Is = 233 &apos; é
+               		hautatu = hautatu &amp; Chr(101)
+            	Case Is = 237 &apos; í
+                	hautatu = hautatu &amp; Chr(105)
+            	Case Is = 243 &apos; ó
+                	hautatu = hautatu &amp; Chr(111)
+            	Case Is = 250 &apos; ú
+                	hautatuf = hautatu &amp; Chr(117)
+            	Case Else &apos; tildea ez daukatenak
+              		hautatu = hautatu &amp; Mid(hautatu, X, 1)
+
+        	End Select
+
+    	Next X
+
+      	hautatu = (Mid (hautatu, (testua +1))) &apos;jatorrizko hitza mantentzen duenez hau kentzen diogu emaitza tilderik gabe azaltzeko
+        oShell = CreateUnoService(&quot;com.sun.star.system.SystemShellExecute&quot;)
+    	oShell.Execute (&quot;http://www.euskaltzaindia.net/index.php?sarrera=&quot; &amp; hautatu &amp; &quot;&amp;testua=&amp;gakoa=&amp;option=com_hiztegianbilatu&amp;view=frontpage&amp;Itemid=410&amp;lang=eu&amp;bila=bai&quot; ,&quot;&quot;,0) &apos; hitza bilatu
+
+	End if
+
+Else
+
+	If hautatu = &quot;&quot; Then
+       hautatu = InputBox( &quot;Escriba una palabra&quot; ,&quot; Euskaltzaindia: Diccionario Batua &quot;)
+	End If
+
+	if hautatu = &quot;&quot; Then
+
+   	Else
+
+   	 	testua = Len(hautatu) &apos; testuaren luzeera, zenbat karaktereez osatuta dagoen
+
+    	For X = 1 To testua &apos; hizkiak banan bana begiratu
+        hizkia = Asc(Mid(hautatu, X, 1)) &apos;  ascii taulan daukan balioa hartu
+
+        	Select Case hizkia
+
+            	Case Is = 225 &apos; á
+              		hautatu = hautatu &amp; Chr(97)
+              	Case Is = 233 &apos; é
+               		hautatu = hautatu &amp; Chr(101)
+            	Case Is = 237 &apos; í
+                	hautatu = hautatu &amp; Chr(105)
+            	Case Is = 243 &apos; ó
+                	hautatu = hautatu &amp; Chr(111)
+            	Case Is = 250 &apos; ú
+                	hautatuf = hautatu &amp; Chr(117)
+            	Case Else &apos; tildea ez daukatenak
+              		hautatu = hautatu &amp; Mid(hautatu, X, 1)
+
+        	End Select
+
+    	Next X
+
+      	hautatu = (Mid (hautatu, (testua +1))) &apos;jatorrizko hitza mantentzen duenez hau kentzen diogu emaitza tilderik gabe azaltzeko
+        oShell = CreateUnoService(&quot;com.sun.star.system.SystemShellExecute&quot;)
+    	oShell.Execute (&quot;http://www.euskaltzaindia.net/index.php?sarrera=&quot; &amp; hautatu &amp; &quot;&amp;testua=&amp;gakoa=&amp;option=com_hiztegianbilatu&amp;view=frontpage&amp;Itemid=410&amp;lang=eu&amp;bila=bai&quot; ,&quot;&quot;,0) &apos; hitza bilatu
+
+	End if
+
+End if
+End sub
+</script:module>
