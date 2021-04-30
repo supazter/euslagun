@@ -3,7 +3,7 @@
  xmlns="http://openoffice.org/extensions/description/2006"
  xmlns:dep="http://openoffice.org/extensions/description/2006"
  xmlns:xlink="http://www.w3.org/1999/xlink">
-	<identifier value="Cim.from.cim"/>
+	<identifier value="euslagun.from.euslagun"/>
 
 	<version value="3"/>
 
@@ -14,8 +14,8 @@
 	<platform value="all" />
 
 	<display-name>
-		<name lang="eu">Cim</name>
-		<name lang="es">Cim</name>
+		<name lang="eu">euslagun</name>
+		<name lang="es">euslagun</name>
 	</display-name>
       <icon>
 		<default xlink:href="image/icon.bmp" />

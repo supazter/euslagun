@@ -5,9 +5,9 @@
  oor:package="org.openoffice.Office.UI">
 	<node oor:name="UIElements">
 		<node oor:name="States">
-			<node oor:name="private:resource/toolbar/addon_Cim.OfficeToolBar" oor:op="replace">
+			<node oor:name="private:resource/toolbar/addon_euslagun.OfficeToolBar" oor:op="replace">
 				<prop oor:name="UIName" oor:type="xs:string">
-					<value>Cim</value>
+					<value>euslagun</value>
 				</prop>
 				<prop oor:name="DockPos" oor:type="xs:string">
 					<value>700,0</value>
