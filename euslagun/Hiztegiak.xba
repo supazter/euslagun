@@ -6,7 +6,7 @@ Sub Zehazki()
 
 Dim hautapena,hizkuntza,oShell As Object
 Dim hautatu As String
-Dim testua, X, hizkia, hautatuf As Long
+Dim testua, X, hizkia, hautatu As Long
 
 GlobalScope.BasicLibraries.LoadLibrary(&quot;Tools&quot;)
 hizkuntza = GetStarOfficeLocale().language
@@ -40,7 +40,7 @@ If hizkuntza = &quot;eu&quot; Then
             	Case Is = 243 &apos; ó
                 	hautatu = hautatu &amp; Chr(111)
             	Case Is = 250 &apos; ú
-                	hautatuf = hautatu &amp; Chr(117)
+                	hautatu = hautatu &amp; Chr(117)
             	Case Else &apos; tildea ez daukatenak
               		hautatu = hautatu &amp; Mid(hautatu, X, 1)
 
@@ -80,7 +80,7 @@ Else
             	Case Is = 243 &apos; ó
                 	hautatu = hautatu &amp; Chr(111)
             	Case Is = 250 &apos; ú
-                	hautatuf = hautatu &amp; Chr(117)
+                	hautatu = hautatu &amp; Chr(117)
             	Case Else &apos; tildea ez daukatenak
               		hautatu = hautatu &amp; Mid(hautatu, X, 1)
 
@@ -134,7 +134,7 @@ If hizkuntza = &quot;eu&quot; Then
             	Case Is = 243 &apos; ó
                 	hautatu = hautatu &amp; Chr(111)
             	Case Is = 250 &apos; ú
-                	hautatuf = hautatu &amp; Chr(117)
+                	hautatu = hautatu &amp; Chr(117)
             	Case Else &apos; tildea ez daukatenak
               		hautatu = hautatu &amp; Mid(hautatu, X, 1)
 
@@ -174,7 +174,7 @@ Else
             	Case Is = 243 &apos; ó
                 	hautatu = hautatu &amp; Chr(111)
             	Case Is = 250 &apos; ú
-                	hautatuf = hautatu &amp; Chr(117)
+                	hautatu = hautatu &amp; Chr(117)
             	Case Else &apos; tildea ez daukatenak
               		hautatu = hautatu &amp; Mid(hautatu, X, 1)
 
@@ -230,7 +230,7 @@ If hizkuntza = &quot;eu&quot; Then
             	Case Is = 243 &apos; ó
                 	hautatu = hautatu &amp; Chr(111)
             	Case Is = 250 &apos; ú
-                	hautatuf = hautatu &amp; Chr(117)
+                	hautatu = hautatu &amp; Chr(117)
             	Case Else &apos; tildea ez daukatenak
               		hautatu = hautatu &amp; Mid(hautatu, X, 1)
 
@@ -270,7 +270,7 @@ Else
             	Case Is = 243 &apos; ó
                 	hautatu = hautatu &amp; Chr(111)
             	Case Is = 250 &apos; ú
-                	hautatuf = hautatu &amp; Chr(117)
+                	hautatu = hautatu &amp; Chr(117)
             	Case Else &apos; tildea ez daukatenak
               		hautatu = hautatu &amp; Mid(hautatu, X, 1)
 
