@@ -45,7 +45,7 @@ dispatcher = createUnoService(&quot;com.sun.star.frame.DispatchHelper&quot;)
 rem ----------------------------------------------------------------------
 dim args1(0) as new com.sun.star.beans.PropertyValue
 args1(0).Name = &quot;Language&quot;
-args1(0).Value = 1034
+args1(0).Value = 3082
 
 dispatcher.executeDispatch(document, &quot;.uno:Language&quot;, &quot;&quot;, 0, args1())
 
