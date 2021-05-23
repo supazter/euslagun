@@ -7,7 +7,7 @@ Hedapen hau libreofficen instalatzeko lehendabizi zip fitxategi batean komprimat
 
 ### Itxura
 
-![Tresna barra](icons/tresna_barra.png)
+![Tresna barra](tresna_barra.png)
 
 ### Azalpena
 
