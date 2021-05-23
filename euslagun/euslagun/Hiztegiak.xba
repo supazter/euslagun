@@ -6,7 +6,7 @@ Sub Zehazki()
 
 Dim hautapena,hizkuntza,oShell As Object
 Dim hautatu As String
-Dim testua, X, hizkia, hautatu As Long
+Dim testua, X, hizkia As Long
 
 GlobalScope.BasicLibraries.LoadLibrary(&quot;Tools&quot;)
 hizkuntza = GetStarOfficeLocale().language
