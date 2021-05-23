@@ -75,8 +75,8 @@
                <value>%origin%/icons/zehazki</value>
             </prop>
             <prop oor:name="Title" oor:type="xs:string">
-               <value xml:lang="eu">Zehazki Gaztelania-Euskara Hiztegia</value>
-               <value xml:lang="es">Diccionario Castellano-Euskara Zehazki</value>
+               <value xml:lang="eu">Zehazki Gaztelania-Euskara itzulpena</value>
+               <value xml:lang="es">Traducir Castellano-Euskara Zehazki</value>
             </prop>
             <prop oor:name="Target" oor:type="xs:string">
                <value>_self</value>
@@ -95,8 +95,8 @@
                <value>%origin%/icons/elhuyar</value>
             </prop>
             <prop oor:name="Title" oor:type="xs:string">
-               <value xml:lang="eu">Elhuyar Euskera-Gaztelania hiztegia</value>
-               <value xml:lang="es">Diccionario Euskara-Castellano Elhuyar</value>
+               <value xml:lang="eu">Elhuyar Euskera-Gaztelania itzulpena</value>
+               <value xml:lang="es">Traducir Euskara-Castellano Elhuyar</value>
             </prop>
             <prop oor:name="Target" oor:type="xs:string">
                <value>_self</value>

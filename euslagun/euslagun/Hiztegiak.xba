@@ -18,7 +18,7 @@ hautatu = hautapena.String
 If hizkuntza = &quot;eu&quot; Then
 
 	If hautatu = &quot;&quot; Then
-		hautatu = InputBox( &quot;Hitz bat idatzi&quot; ,&quot; Zehazki: Gaztelera-Euskara hiztegia &quot;)
+		hautatu = InputBox( &quot;Hitz bat idatzi&quot; ,&quot; Zehazki: Gaztelera-Euskara itzulpena &quot;)
 	End If
 
 	if hautatu = &quot;&quot; Then
@@ -57,7 +57,7 @@ If hizkuntza = &quot;eu&quot; Then
 Else
 
 	If hautatu = &quot;&quot; Then
-       hautatu = InputBox( &quot;Escriba una palabra&quot; ,&quot; Zehazki: Diccionario Castellano-Euskara &quot;)
+       hautatu = InputBox( &quot;Escriba una palabra&quot; ,&quot; Zehazki: Traducir Castellano-Euskara &quot;)
 	End If
 
 	if hautatu = &quot;&quot; Then
@@ -112,7 +112,7 @@ hautatu = hautapena.String
 If hizkuntza = &quot;eu&quot; Then
 
 	If hautatu = &quot;&quot; Then
-		hautatu = InputBox( &quot;Hitz bat idatzi&quot; ,&quot; Elhuyar: Euskara-Gaztelera hiztegia &quot;)
+		hautatu = InputBox( &quot;Hitz bat idatzi&quot; ,&quot; Elhuyar: Euskara-Gaztelera itzulpena &quot;)
 	End If
 
 	if hautatu = &quot;&quot; Then
@@ -151,7 +151,7 @@ If hizkuntza = &quot;eu&quot; Then
 Else
 
 	If hautatu = &quot;&quot; Then
-       hautatu = InputBox( &quot;Escriba una palabra&quot; ,&quot; Elhuyar: Diccionario Euskara-Castellano &quot;)
+       hautatu = InputBox( &quot;Escriba una palabra&quot; ,&quot; Elhuyar: Traducir Euskara-Castellano &quot;)
 	End If
 
 	if hautatu = &quot;&quot; Then
