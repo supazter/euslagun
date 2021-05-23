@@ -3,7 +3,7 @@ Euskaraz idazteko lagungarri den Libreoffice hedapena
 
 ### Nola Instalatu
 
-Hedapen hau libreofficen instalatzeko lehendabizi zip fitxategi batean komprimatu eta gero luzapena ordezkatu .oxt batengatik
+Oxt luzapena duen fitxategian klik bikoitza eginez libreofficen instalatuko da.
 
 ### Itxura
 
@@ -11,10 +11,9 @@ Hedapen hau libreofficen instalatzeko lehendabizi zip fitxategi batean komprimat
 
 ### Azalpena
 
-Libreoffice hedapen bat da. Euskaraz eta gazteleraz idazten dugunontzat
- 1. Euskaraz zuzendu
- 2. Gazteleraz zuzendu
- 3. Bi zutabeko taula bat sortzen du. Ezkerran euskaraz eta eskuinean gazteleraz. Erdian tarte bat.
- 4. Gaztelera > euskara Hitz baten Itzulpena zehazki webgunera zuzentzen gaitu
- 5. Euskara > Gaztelera Hitz baten Itzulpena. Elhuyar webgunera zuzentzen gaitu
- 6. Euskara Hiztegia.Euskaltzaindiako webgunera zuzentzen gaitu 
+ 1. Hautatutako testua euskaraz zuzentzen du.
+ 2. Hautatutako testua gazteleraz zuzentzen du.
+ 3. Bi zutabeko taula bat sortzen du. Ezkerrean euskaraz eta eskuinean gazteleraz zuzentzen du. Erdian tarte bat uzten du.
+ 4. Hitz bat hautatzen badugu itzulpena Zehazki webgunean bilatuko du. Ez baldin badugu ezer hautatu, leiho bat irekiko da eta itzuli nahi dugun hitza eskatuko digu.
+ 5. Hitz bat hautatzen badugu itzulpena Elhuyar webgunean bilatuko du. Ez baldin badugu ezer hautatu, leiho bat irekiko da eta itzuli nahi dugun hitza eskatuko digu.
+ 6. Hitz bat hautatzen badugu esanahia euskaltzaindiaren webgunean bilatuko du. Ez baldin badugu ezer hautatu, leiho bat irekiko da eta nahi dugun hitza eskatuko digu.
