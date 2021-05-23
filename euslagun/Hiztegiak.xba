@@ -144,7 +144,7 @@ If hizkuntza = &quot;eu&quot; Then
 
       	hautatu = (Mid (hautatu, (testua +1))) &apos;jatorrizko hitza mantentzen duenez hau kentzen diogu emaitza tilderik gabe azaltzeko
         oShell = CreateUnoService(&quot;com.sun.star.system.SystemShellExecute&quot;)
-    	oShell.Execute (&quot;http://hiztegiak.elhuyar.org/eu_es/&quot; &amp; hautatu,&quot;&quot;,0) &apos; hitza bilatu
+    	oShell.Execute (&quot;http://hiztegiak.elhuyar.eus/eu_es/&quot; &amp; hautatu,&quot;&quot;,0) &apos; hitza bilatu
 
 	End if
 
@@ -184,7 +184,7 @@ Else
 
       	hautatu = (Mid (hautatu, (testua +1))) &apos;jatorrizko hitza mantentzen duenez hau kentzen diogu emaitza tilderik gabe azaltzeko
         oShell = CreateUnoService(&quot;com.sun.star.system.SystemShellExecute&quot;)
-    	oShell.Execute (&quot;http://hiztegiak.elhuyar.org/eu_es/&quot; &amp; hautatu,&quot;&quot;,0) &apos; hitza bilatu
+    	oShell.Execute (&quot;http://hiztegiak.elhuyar.eus/eu_es/&quot; &amp; hautatu,&quot;&quot;,0) &apos; hitza bilatu
 
 	End if
 

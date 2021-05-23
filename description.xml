@@ -5,7 +5,7 @@
  xmlns:xlink="http://www.w3.org/1999/xlink">
 	<identifier value="euslagun.from.euslagun"/>
 
-	<version value="3"/>
+	<version value="3.5"/>
 
 	<dependencies>
 		<OpenOffice.org-minimal-version value="2.4" dep:name="OpenOffice.org 2.4"/>
@@ -18,7 +18,7 @@
 		<name lang="es">euslagun</name>
 	</display-name>
       <icon>
-		<default xlink:href="image/icon.bmp" />
+		<default xlink:href="image/euslagun.png" />
 	</icon>
 
 
