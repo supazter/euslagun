@@ -5,7 +5,7 @@
  xmlns:xlink="http://www.w3.org/1999/xlink">
 	<identifier value="euslagun.from.euslagun"/>
 
-	<version value="0.9"/>
+	<version value="1.0"/>
 
 	<dependencies>
 		<OpenOffice.org-minimal-version value="2.4" dep:name="OpenOffice.org 2.4"/>
