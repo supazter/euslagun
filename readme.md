@@ -1,9 +1,9 @@
-Euskaraz idazteko lagungarri den Libreoffice hedapena
+Euskaraz idazteko lagungarri den Libreoffice hedapena.
 ===
 
 ### Nola Instalatu
 
-Oxt luzapena duen fitxategian klik bikoitza eginez libreofficen instalatuko da.
+OXT luzapena duen fitxategian klik bikoitza eginez libreofficen instalatuko da.
 
 ### Itxura
 
